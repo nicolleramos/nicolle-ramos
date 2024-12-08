@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    margin-top: 90px;
+}
+
+nav {
+    margin-top: -15px;
+}
+
+nav a {
+    color: #797171;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+p {
+    font-weight: 400;
+    margin: 48px;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.intro {
+    margin-top: 25px;
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.intro img {
+    margin-top: -20px;
+}
+
+.projects {
+    width: 60%; 
+    max-width: 1200px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px auto; 
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card p {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    margin: 8px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 180px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff; 
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%; 
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
